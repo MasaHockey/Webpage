@@ -609,36 +609,36 @@ address {
 	font-size: 10px;
 }
 
-
-#page_top{
-	width: 50px;
-	height: 50px;
-	position: fixed;
-	right: 0;
+#arrow {
+    display:  inline-block;
+    color: #fff;
+    text-decoration:  none;
+    background-color: red;
+    border-radius: 5px;
+	position:  fixed;
 	bottom: 0;
-	background: darkred;
+	right: 0;
+    height: 50px;
+	width: 50px;
 	opacity: 0.6;
-  }
-  #page_top a{
-	position: relative;
-	display: block;
+}
+#arrow a{
+	position: fixed;
 	width: 50px;
 	height: 50px;
-	text-decoration: none;
-  }
-  #page_top a::before{
-	font-family: 'Font Awesome 5 Free';
-	font-weight: 900;
-	content: '\f106';
-	font-size: 25px;
-	color: #fff;
-	position: absolute;
-	width: 25px;
-	height: 25px;
-	top: 0;
-	bottom: 0;
-	right: 0;
-	left: 0;
-	margin: auto;
-	text-align: center;
-  }
+}
+#arrow::before {
+    content:  '';
+    width: 20px;
+    height: 20px;
+    display:  block;
+    border-top: solid 2px;
+    border-right: solid 2px;
+    transform: rotate(-45deg);
+    position:  absolute;
+    top: 10px;
+    bottom:  0;
+    left:  0;
+    right:  0;
+    margin:  auto;
+}
